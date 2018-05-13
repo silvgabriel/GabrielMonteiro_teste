@@ -1,0 +1,210 @@
+/* ******************************CONFIGURAÇOES GERAIS***************************************** */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: gray;
+ 	font: 75%/1.6 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+
+
+
+/* ******************************PRINCIPAL***************************************** */
+#principal{
+	width: 800px;
+	background-color: #f3f3f3;
+	height: 700px;
+	margin: 0 auto;
+	border-radius: 0 0 5px 5px;
+}
+
+
+
+
+/* ******************************BOX'S PRINCIPAIS**************************************** */
+#logodiv{
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	background-color: ;
+	border-bottom: 1px solid #d8d8d8;
+	background: #fff;
+}
+#logo{
+	padding: 5px;
+}
+.red{
+	color: red;
+}
+#colunas{
+	width: auto;
+	height: auto;
+	margin-bottom: 50px;
+}
+#reg-cad{
+	border: 1px solid black;
+	width: 300px;
+	height: 400px;
+	float: left;
+	margin: 30px 10px 10px 50px;
+	border-radius: 10px;
+	background-color: #d8d8d8;
+}
+.list{
+	border: 1px solid black;
+	width: 700px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 30px;
+	border-radius: 10px;
+	background-color: #d8d8d8;
+}
+#h3principal{
+	width: 100%;
+	background-color: black;
+	height: 30px;
+	color: white;
+	text-align: center;
+	border-radius: 10px 10px 0 0;
+	padding: 4px 0 0 0;
+}
+#globallink{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+}
+#consulta{
+	border: 1px solid black;
+	width: 300px;
+	height: 400px;
+	float: right;
+	margin: 30px 50px 10px 10px;
+	border-radius: 10px;
+	background-color: #d8d8d8;
+}
+.link:link{
+	color: white;
+}
+.link:visited{
+	color: white;
+}
+.link:hover{
+	color: orange;
+			padding: 12px 25px 12px 25px;
+}
+.link:active{
+	color: #b9c941;
+}
+.link{
+	text-decoration: none;
+	border-radius: 10px 0 10px 0 ;
+}
+.classlink{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	border: 1px solid black;
+	width: 184px;
+	height: auto;
+	padding: 10px 0 10px 0;
+	background-color: black;
+	border-radius: 10px 0 10px 0 ;
+}
+.classlink2{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 50px;
+	border: 1px solid black;
+	width: 184px;
+	height: auto;
+	padding: 10px 0 10px 0;
+	background-color: black;
+	border-radius: 10px 0 10px 0 ;
+}
+.ausencialink{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 480px;
+	border: 1px solid black;
+	width: 400px;
+	height: auto;
+	padding: 10px 0 10px 0;
+	background-color: black;
+	border-radius: 10px 0 10px 0 ;
+}
+
+
+
+
+/* ******************************BOX DE CADASTRO**************************************** */
+.boxcad{
+	border: 1px solid black;
+	width: 350px;
+	height: 420px;
+	border-radius: 10px;
+	background-color: #d8d8d8;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.infocad{
+	width: 100%;
+	height: auto;
+	align-items: center;
+	margin: 0 auto;
+}
+.infoconsulta{
+	width: 100%;
+	height: 450px;
+	align-items: center;
+	margin: 0 auto;
+	max-width: 100%;
+	overflow: scroll;
+}
+.config{
+	margin-top: 10px;
+}
+
+
+
+/* ******************************CSS TABELA (LISTAR MOTORISTAS)**************************************** */
+
+#tabelaconsultamt {
+  background-color: #E0E0F8;
+  text-align: center;
+  border-collapse: collapse;
+  width: 50em;
+  border: 1px solid #666;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#tabelaconsultamt thead {
+	color: white;
+  background: #0B0B3B;
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+}
+.dif:hover {
+  background-color:green;
+  color: #fff;
+}
+#tabelaconsultamt thead tr:hover {
+  background-color: transparent;
+}
+
+#tabelaconsultamt th {
+  text-align: center;
+  font-weight: normal;
+
+}
+#tabelaconsultamt th, td {
+  padding: 0.1em 1em;
+
+}
+#tabelaconsultamt caption{
+	padding-bottom: 10px;
+	font-size: 15px;
+	color: blue;
+}

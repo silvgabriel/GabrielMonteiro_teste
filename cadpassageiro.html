@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>GabrielMonteiro_teste</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui.min.css"/>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#date").datepicker({
+        		yearRange: "-100:+0",
+        		showOtherMonths: true,
+        		selectOtherMonths: true,
+        		changeMonth: true,
+        		changeYear: true,
+        		dateFormat: 'dd/mm/yy',
+                dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+                dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
+                dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+                monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+                monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+                nextText: 'Próximo',
+                prevText: 'Anterior'
+             });
+        });
+    </script>
+</head>
+<body>
+	<div id="principal">
+		<div id="logodiv"><h2 id="logo"><span class="red">Corridas</span> Compartilhadas</h2></div>
+			<div class="boxcad">
+				<div id="h3principal"><h3>Cadastrar Passageiro</h3></div>
+					<div class="infocad">
+						<form name="form1" method="POST" action="cadpassageiro.php" onsubmit="return checkformPS()" >
+								<table>
+								<tr><td>Nome: </td><td><input type="text" class="text required" placeholder="Nome (apenas letras)" name="psnome" maxlength="35" /></td></tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td>Nascimento: </td><td><input type="text" id="date" class="text required" name="psnasc" maxlength="10"/></td></tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td>CPF: </td><td><input type="text" class="text required" name="pscpf" placeholder="CPF (apenas números)" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="11"/></td></tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td>Sexo: </td><td><input type="radio" name="pssexo" value="Masculino" class="text required"/>Masculino &nbsp;&nbsp;&nbsp;<input type="radio" name="pssexo" value="Feminino" class="text required"/>Feminino</td></tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td>&nbsp;</td></tr>
+								<tr><td><input style="padding: 5px 20px 5px 20px;" type="submit" value=" Enviar "/></td><td><input style="padding: 5px 20px 5px 20px;" type="button" value=" Cancelar" onclick="retornaIndex()" /></td></tr>
+								&nbsp;
+								</table>
+						</form>
+					</div>
+			</div>
+	</div>
+</body>	
+</html>
